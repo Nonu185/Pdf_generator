@@ -69,7 +69,7 @@ const MergePdf = () => {
       <button 
         onClick={handleUploadClick}
         disabled={loading}
-        className="cursor-pointer mt-8 rounded-3xl px-6 py-3.5 bg-gradient-to-r from-red-600 to-pink-700 text-white font-medium text-2xl hover:shadow-lg hover:shadow-indigo-200/40 transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 active:shadow-md disabled:opacity-70"
+        className="cursor-pointer mt-8 rounded-3xl px-6 py-3.5 bg-gradient-to-r from-red-600 to-pink-700 text-white font-medium text-2xl hover:shadow-lg hover:shadow-indigo-200/40 transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 active:shadow-md disabled:opacity-70  h-25 w-85"
       >
         {loading ? 'Merging...' : 'Select PDFs'}
       </button>
@@ -83,6 +83,13 @@ const MergePdf = () => {
           <i className="ri-download-2-line"></i> Download PDF
         </a>
       )}
+       <button 
+        onClick={() => window.open('https://drive.google.com/', '_blank')}
+        className='cursor-pointer text-5xl mt-5 bg-gradient-to-l from-red-600 to-pink-200 rounded-full p-3 hover:shadow-lg hover:-translate-y-1 transition-all duration-300'
+        title="Open Google Drive"
+      >
+        <i className="ri-drive-line text-white"></i>
+      </button>
     </main>
   );
 };

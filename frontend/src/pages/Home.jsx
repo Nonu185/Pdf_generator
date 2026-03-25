@@ -66,7 +66,7 @@ const Home = () => {
       <button 
         onClick={handleUploadClick}
         disabled={loading}
-        className="cursor-pointer mt-8 rounded-3xl px-6 py-3.5 bg-gradient-to-r from-red-600 to-pink-700 text-white font-medium text-2xl hover:shadow-lg hover:shadow-indigo-200/40 transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 active:shadow-md disabled:opacity-70"
+        className="cursor-pointer mt-8 rounded-3xl px-6 py-3.5 bg-gradient-to-r from-red-600 to-pink-700 text-white font-medium text-2xl hover:shadow-lg hover:shadow-indigo-200/40 transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 active:shadow-md disabled:opacity-70  h-25 w-85"
       >
         {loading ? 'Converting...' : 'Upload image'}
       </button>
