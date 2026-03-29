@@ -39,6 +39,10 @@ const Navbar = () => {
             Convert PDF
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 transition-all duration-300 group-hover:w-full rounded-full"></span>
           </Link>
+          <Link to="/compress-image" className="relative font-medium text-gray-700 hover:text-red-600 transition-colors group py-2">
+            Compress Image
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 transition-all duration-300 group-hover:w-full rounded-full"></span>
+          </Link>
           <Link to="/compress" className="relative font-medium text-gray-700 hover:text-red-600 transition-colors group py-2">
             Compress PDF
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 transition-all duration-300 group-hover:w-full rounded-full"></span>

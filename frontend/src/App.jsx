@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Auth from './pages/Auth';
 import MergePdf from './pages/MergePdf';
 import CompressPdf from './pages/CompressPdf';
+import CompressImage from './pages/CompressImage';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/auth" element={<Auth />} />
           <Route path="/merge" element={<MergePdf />} />
           <Route path="/compress" element={<CompressPdf />} />
+          <Route path="/compress-image" element={<CompressImage />} />
         </Routes>
       </div>
     </Router>
