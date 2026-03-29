@@ -25,7 +25,7 @@ const MergePdf = () => {
     try {
         setLoading(true);
         setPdfUrl(null);
-        const response = await axios.post('http://localhost:5000/api/pdf/merge', formData, {
+        const response = await axios.post('https://flakes-pdf-d4h7.onrender.com/api/pdf/merge', formData, {
             responseType: 'blob'
         });
 

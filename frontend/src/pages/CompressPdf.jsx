@@ -20,7 +20,7 @@ const CompressPdf = () => {
     try {
         setLoading(true);
         setPdfUrl(null);
-        const response = await axios.post('http://localhost:5000/api/pdf/compress', formData, {
+        const response = await axios.post('https://flakes-pdf-d4h7.onrender.com/api/pdf/compress', formData, {
             responseType: 'blob'
         });
 

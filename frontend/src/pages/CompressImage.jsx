@@ -21,7 +21,7 @@ const CompressImage = () => {
         setLoading(true);
         setImageUrl(null);
         
-        const response = await axios.post('http://localhost:5001/api/pdf/compress-image', formData, {
+        const response = await axios.post('https://flakes-pdf-d4h7.onrender.com/api/pdf/compress-image', formData, {
             responseType: 'blob'
         });
 

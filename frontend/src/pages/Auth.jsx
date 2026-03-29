@@ -26,7 +26,7 @@ const Auth = () => {
     
     try {
       const endpoint = isLogin ? '/api/auth/login' : '/api/auth/register';
-      const res = await axios.post(`http://localhost:5000${endpoint}`, formData);
+      const res = await axios.post(`https://flakes-pdf-d4h7.onrender.com${endpoint}`, formData);
       
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('user', JSON.stringify(res.data.user));
