@@ -1,2 +1,25 @@
+# Dependencies
+node_modules/
+
+# Environment Variables (CRITICAL)
 .env
-node_modules
+.env.test
+.env.production
+.env.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Mac OS
+.DS_Store
+
+# Temporary files created by PDF processing
+input-*.pdf
+output-*.pdf
+test.pdf
+test-upload.jpg
+compressed-result.jpg
+uploads/
+temp/
