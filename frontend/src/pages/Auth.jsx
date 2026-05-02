@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import api from '../api';
 import { useNavigate } from 'react-router-dom';
 
 const Auth = () => {
@@ -26,7 +26,7 @@ const Auth = () => {
     
     try {
       const endpoint = isLogin ? '/api/auth/login' : '/api/auth/register';
-      const res = await axios.post(`https://flakes-pdf-d4h7.onrender.com${endpoint}`, formData);
+      const res = await api.post(endpoint, formData);
       
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('user', JSON.stringify(res.data.user));

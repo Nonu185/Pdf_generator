@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import axios from 'axios';
+import api from '../api';
 
 const CompressImage = () => {
   const fileInputRef = useRef(null);
@@ -21,7 +21,7 @@ const CompressImage = () => {
         setLoading(true);
         setImageUrl(null);
         
-        const response = await axios.post('https://flakes-pdf-d4h7.onrender.com/api/pdf/compress-image', formData, {
+        const response = await api.post('/api/pdf/compress-image', formData, {
             responseType: 'blob'
         });
 

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import axios from 'axios';
+import api from '../api';
 
 const Home = () => {
   const fileInputRef = useRef(null);
@@ -21,7 +21,7 @@ const Home = () => {
 
     try {
         setLoading(true);
-        const response = await axios.post('https://flakes-pdf-d4h7.onrender.com/api/pdf/convert', formData, {
+        const response = await api.post('/api/pdf/convert', formData, {
             responseType: 'blob'
         });
 

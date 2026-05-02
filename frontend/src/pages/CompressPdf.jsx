@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import axios from 'axios';
+import api from '../api';
 
 const CompressPdf = () => {
   const fileInputRef = useRef(null);
@@ -20,7 +20,7 @@ const CompressPdf = () => {
     try {
         setLoading(true);
         setPdfUrl(null);
-        const response = await axios.post('https://flakes-pdf-d4h7.onrender.com/api/pdf/compress', formData, {
+        const response = await api.post('/api/pdf/compress', formData, {
             responseType: 'blob'
         });
 
